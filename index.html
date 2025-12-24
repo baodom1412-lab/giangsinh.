@@ -70,12 +70,9 @@
         // ==========================================
         // 1. Vandiep
         // ==========================================
-       <audio controls autoplay loop>
-           <source src=".mp3" type="audio/mpeg">
-        </audio>
-        let bgMusic = new Audio(MUSIC_URL);
-        bgMusic.loop = true; 
-        bgMusic.volume = 1.0;
+       <audio id="bgMusic" src="noel.mp3" loop></audio>
+       const bgMusic = document.getElementById("bgMusic");
+       bgMusic.volume = 1.0;
 
         const loader = new THREE.TextureLoader();
         // Đảm bảo tên file trong mảng này khớp với tên file ảnh bạn có
