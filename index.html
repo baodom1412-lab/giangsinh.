@@ -70,7 +70,9 @@
         // ==========================================
         // 1. Vandiep
         // ==========================================
-        const MUSIC_URL = "./nhac.mp3"; // Chèn nhạc theo yêu cầu
+       <audio controls autoplay loop>
+           <source src=".mp3" type="audio/mpeg">
+        </audio>
         let bgMusic = new Audio(MUSIC_URL);
         bgMusic.loop = true; 
         bgMusic.volume = 1.0;
