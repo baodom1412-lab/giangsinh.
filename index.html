@@ -49,7 +49,10 @@
             transform: scaleX(-1); opacity: 0.6; border-radius: 8px;
         }
         
+       
         #error-log { display: none; position: absolute; top: 0; left: 0; color: red; background: rgba(0,0,0,0.8); z-index: 999; padding: 10px; }
+  
+        audio { display: none; }
     </style>
 </head>
 <body>
@@ -70,6 +73,7 @@
         // ==========================================
         // 1. Vandiep
         // ==========================================
+       
        <audio id="bgMusic" src="noel.mp3" loop></audio>
        const bgMusic = document.getElementById("bgMusic");
        bgMusic.volume = 1.0;
